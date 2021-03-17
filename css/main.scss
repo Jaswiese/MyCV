@@ -1,0 +1,388 @@
+//project colours 
+$shadeBlack: #000814;
+$shadeDarkBlue: #001d3d;
+$blue: #003566;
+$darkYellow: #ffc300;
+$yellow: #ffd60a;
+
+//project fonts 
+
+$jasperFont:  'Satisfy', cursive;
+$headings-fontStack: 'Bebas Neue', cursive;
+$paragraph-fontStack: 'Montserrat', sans-serif;
+$numbered-fontStack: 'Six Caps', sans-serif;
+
+
+// mixins - created to be reused further in the stylesheet
+@mixin oneRemMargin {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+@mixin headings {
+    font-size: 6rem;
+    color: $blue;
+    font-family: $headings-fontStack
+}
+
+@mixin subHeadings {
+    font-size: 4rem;
+    margin: 2rem 0rem 2rem 0rem;
+    color: $blue;
+    font-family: $headings-fontStack
+}
+
+//body wide style
+
+.num-background{
+    color: white;
+    font-family: $numbered-fontStack;
+    font-size: 8rem;
+    margin-right: 1rem;
+}
+
+
+//navbar start
+
+#navbar{
+    background-color: white;
+  #navbarBox{
+    background-color: white;
+   } 
+
+   #navbar-items-cont {
+       display: flex;
+       justify-content: flex-end;
+       @include oneRemMargin();
+   }
+
+   .navbar-brand {
+       font-family: $headings-fontStack;
+       @include oneRemMargin();
+   }
+
+   a {
+       font-family: $headings-fontStack;
+       font-size: 1.5rem;
+   }
+
+   .base:hover {
+       color: $shadeDarkBlue;
+       border-top: 0.5rem solid $yellow;
+   }
+
+   .action:hover {
+       background-color: #003566;
+       color: #ffc300;
+   }
+
+   
+}
+
+//navbar-end
+
+
+//hero start
+
+#hero-portfolio {
+    border-bottom: 0.3rem solid $darkYellow;
+    height: 50vh;
+    
+    #position-div{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #welcome-message {
+
+        font-family: $paragraph-fontStack;
+
+
+    }
+
+}
+
+//hero-end
+
+
+//bio-start
+
+#bio-sec {
+    border-bottom: 0.3rem solid $darkYellow;
+    margin: 5rem 2rem 1.5rem 2rem;
+    #background-bio-num {
+        background-color: $shadeDarkBlue;
+        height: 10rem;
+        width: 8rem;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    h1 {
+        @include headings();
+        border-bottom: 0.3rem solid $darkYellow;
+    }
+
+    #contact-details {
+        background-image: linear-gradient($darkYellow, $yellow);
+        margin-top: 1.8rem;
+        max-width: 35vw;
+    }
+
+    h3 {
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+        font-size: 1.5rem;
+        font-family: $headings-fontStack;
+        color: $blue;
+    }
+
+    h4 {
+        font-size: 3rem;
+        color: white;
+        font-family: $paragraph-fontStack;
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+
+    }
+
+    #img-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem 0.5rem 2rem 0.5rem;
+
+    }
+
+    img {
+        max-width: 30vw;
+        
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: flex-start;
+
+        i {
+            font-size: 3rem;
+            color: $blue;
+            margin: 1rem 0.5rem 1rem 0.5rem;
+        }
+
+        i:hover {
+            font-size: 3.2rem;
+            color: $darkYellow;
+            cursor: pointer;
+        }
+    }
+    #bio-para{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        margin: 0.5rem auto auto auto;
+        font-family: $paragraph-fontStack;
+        font-size: 1.5rem;
+    }
+
+
+}
+
+
+//bio-end
+
+//skills start
+
+#skills-sec {
+    border-bottom: 0.3rem solid $darkYellow;
+    margin: 5rem 2rem 1.5rem 2rem;
+    #background-skills-num {
+        background-color: $shadeDarkBlue;
+        height: 10rem;
+        width: 8rem;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    h1 {
+        @include headings();
+        border-bottom: 0.3rem solid $darkYellow;
+    }
+
+    h3 {
+        @include subHeadings();
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 3rem 1rem 1rem 2rem;
+        justify-content: space-between;
+
+        li {
+            font-size: 4rem;
+            font-family: $paragraph-fontStack;
+        }
+
+    }
+
+    .fa-python {
+        color: #ffc300;
+    }
+
+     .fa-js {
+         color: rgb(252, 176, 36);
+     }
+
+
+     .fa-css3-alt {
+         color: rgb(240, 171, 183);
+     }
+
+     .fa-html5 {
+         color: lightblue;
+     }
+
+
+     //libraries section
+
+     #framework-library {
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+         h4 {
+             font-size: 4rem;
+             font-family: $paragraph-fontStack;
+             text-align: center;
+
+         }
+
+         i {
+             font-size: 4rem;
+             text-align: center;
+         }
+
+         img {
+             margin-top: -1rem;
+             max-width: 5rem;
+             align-self: center;
+         }
+
+         .fa-sass {
+            color: pink;
+         }
+
+         .bi-bootstrap {
+             color: purple;
+         }
+     }
+   
+
+    
+}
+
+//education 
+
+#education-sec {
+    border-bottom: 0.3rem solid $darkYellow;
+    margin: 5rem 2rem 1.5rem 2rem;
+
+    #left-edu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #background-edu-num {
+        background-color: $shadeDarkBlue;
+        height: 10rem;
+        width: 8rem;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    h1{
+        @include headings();
+        border-bottom: 0.3rem solid $darkYellow;
+    }
+
+    img {
+        max-width: 11rem;
+        min-width: 9rem;
+        margin-left: 4rem;
+    }
+
+   .edutxt {
+       background-image: linear-gradient($darkYellow, $yellow);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       
+
+   }
+
+    h3 {
+       font-size: 1.5rem;
+       color: $blue;
+       font-family: $paragraph-fontStack;
+
+    }
+
+    h4 {
+        font-family: $headings-fontStack;
+        font-size: 3rem;
+    }
+
+   .col{
+       min-height: 10rem;
+   }
+
+   #final-row {
+       margin-bottom: 5rem;
+   }
+
+}
+
+// projects 
+
+#projects-sec {
+
+    border-bottom: 0.3rem solid $darkYellow;
+    margin: 5rem 2rem 1.5rem 2rem;
+
+    #left-proj {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #background-proj-num {
+        background-color: $shadeDarkBlue;
+        height: 10rem;
+        width: 8rem;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    h1{
+        @include headings();
+        border-bottom: 0.3rem solid $darkYellow;
+    }
+
+
+}
