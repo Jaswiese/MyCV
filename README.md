@@ -12,10 +12,10 @@ Please consider this a work in progress.
 ## Table of contents:
 ...
 
-* [Installion](https://github.com/Jaswiese/capstoneProject20/blob/main/README.md#installation) 
-* [Usage](https://github.com/Jaswiese/capstoneProject20#usage)
-  * [Basic navigation](https://github.com/Jaswiese/capstoneProject20#basic-navigation)
-* [Credits](https://github.com/Jaswiese/capstoneProject20#usage) 
+* [Installion](https://github.com/Jaswiese/MyCV/blob/main/README.md#installation) 
+* [Usage](https://github.com/Jaswiese/MyCV/blob/main/README.md#usage)
+  * [Basic navigation](https://github.com/Jaswiese/MyCV/blob/main/README.md#credits)
+* [Credits](https://github.com/Jaswiese/MyCV/blob/main/README.md#credits) 
 
 ## Installation
 ...
